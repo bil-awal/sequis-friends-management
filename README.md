@@ -41,6 +41,9 @@ For a social networking application, managing friendship is a shared characteris
 4. `app/Services` - Contains all the services
 5. `app/Tests` - Contains all the tests
 
+### Test Result
+<img width="840" alt="Screenshot 2022-12-02 at 11 14 06 AM" src="https://user-images.githubusercontent.com/23447123/205213553-23f6eb83-2dc1-4f04-bc4e-92ded85e3e3d.png">
+
 ### API Documentation
 1. `POST /api/v1/friendship {"email": "andy@example.com"}` - List of friends and common friends
 <img width="1680" alt="Screenshot 2022-12-02 at 11 07 48 AM" src="https://user-images.githubusercontent.com/23447123/205212812-f495b981-dd17-4f77-b432-da6d4bb65e97.png">
