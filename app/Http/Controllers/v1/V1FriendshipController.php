@@ -8,6 +8,36 @@ use Illuminate\Http\Request;
 
 class V1FriendshipController extends Controller
 {
+    public function friend(Request $request)
+    {
+        // 0. Try to get the friend list
+        try {
+            // 1. Validate the request
+            $request = self::emailValidation($request);
+
+            // 2. Get the friend list
+            $getFriends = V1Friendship::where('requestor', $request['email'])
+                ->where('status', 'accepted')
+                ->get();
+
+            // 3. Return the friend list
+            $friends = [];
+            foreach ($getFriends as $friendship) {
+                $friends[] = $friendship->to;
+            }
+
+            // 4. Return success
+            return response()->json([
+                'friends' => $friends
+            ], 200);
+        }
+
+        // 5. Catch all exceptions
+        catch (\Exception $e) {
+            return self::responseFailed($e->getMessage(), 500);
+        }
+    }
+
     public function request(Request $request)
     {
         // 0. Try to create a friendship

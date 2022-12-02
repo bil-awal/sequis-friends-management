@@ -58,6 +58,25 @@ class V1FriendshipTest extends TestCase
 
     /**
      * @test
+     * Friend list
+     */
+    public function friend()
+    {
+        $response = $this->post('/api/v1/friendship', [
+            'email' => 'andy@example.com'
+        ]);
+
+        $response->assertJson([
+            'friends' => [
+                'john@example.com'
+            ]
+        ]);
+
+        $response->assertStatus(200);
+    }
+
+    /**
+     * @test
      * Reject a friendship
      */
     public function reject()

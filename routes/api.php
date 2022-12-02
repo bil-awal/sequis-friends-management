@@ -24,6 +24,8 @@ Route::group(['prefix' => 'v1', 'as' => 'ApiV1'], function ()
 {
     Route::group(['prefix' => 'friendship', 'as' => 'Friendship'], function ()
     {
+        Route::post('/', [V1FriendshipController::class, 'friend'])->name('');
+
         Route::group(['prefix' => 'request', 'as' => 'Request'], function ()
         {
             Route::post('/', [V1FriendshipController::class, 'request'])->name('');
