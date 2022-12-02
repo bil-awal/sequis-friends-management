@@ -1,8 +1,5 @@
 # Sequis Friends Management
-<img src="https://img.shields.io/badge/Web-v0.1-purple">
-<img src="https://img.shields.io/badge/API-v0.1-purple">
-<img src="https://img.shields.io/badge/PSR12-20221201 | OK-blue">
-<img src="https://img.shields.io/badge/Composer-Build | PASS-success">
+<img src="https://img.shields.io/badge/Web-v0.1-purple"> <img src="https://img.shields.io/badge/API-v0.1-purple"> <img src="https://img.shields.io/badge/PSR12-20221201 | OK-blue"> <img src="https://img.shields.io/badge/Composer-Build | PASS-success">
 
 ### 2022 © Bil Awal
 
@@ -26,14 +23,16 @@ For a social networking application, managing friendship is a shared characteris
 2. Run `composer install`
 3. Create a database
 5. Run `php artisan migrate`
-7. Run `php artisan serve`
+6. Run `php artisan test` - Test Driven
+7. Run `php artisan serve` - Production Driven
 
 ### Docker Installation with Makefile
 1. Clone the repository
 2. Run `make install`
 3. Run `make up`
 4. Run `make migrate`
-5. Run `make serve`
+5. Run `make test` - Test Driven
+6. Run `make serve` - Production Driven
 
 ### Application Structure
 1. `app/Http/Controllers` - Contains all the controllers
