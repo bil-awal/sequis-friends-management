@@ -39,6 +39,7 @@ For a social networking application, managing friendship is a shared characteris
 2. `app/Http/Requests` - Contains all the requests
 3. `app/Models` - Contains all the models
 4. `app/Services` - Contains all the services
+5. `app/Tests` - Contains all the tests
 
 ### API Documentation
 1. `POST /api/v1/friendship/request {"requestor": "andy@example.com", "to": "john@example.com"}`- Send a friend request
