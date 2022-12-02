@@ -43,12 +43,12 @@ For a social networking application, managing friendship is a shared characteris
 
 ### API Documentation
 1. `POST /api/v1/friendship {"email": "john@example.com"}` - List of friends and common friends
-1. `POST /api/v1/friendship/request {"requestor": "andy@example.com", "to": "john@example.com"}`- Send a friend request
-2. `POST /api/v1/friendship/request/list {"email": "john@example.com"}` - List all friend requests
-3. `POST /api/v1/friendship/request/block {"requestor": "andy@example.com", "block": "john@example.com"}` - Block a friend request
-4. `POST /api/v1/friendship/accept  {"requestor": "andy@example.com", "to": "john@example.com"} ` - Accept a friend request
-5. `POST /api/v1/friendship/reject {"requestor": "andy@example.com", "to": "john@example.com"}` - Reject a friend request
-6. `POST /api/v1/friendship/pending {"requestor": "andy@example.com", "to": "john@example.com"}` - Reset a friend request
+2. `POST /api/v1/friendship/request {"requestor": "andy@example.com", "to": "john@example.com"}`- Send a friend request
+3. `POST /api/v1/friendship/request/list {"email": "john@example.com"}` - List all friend requests
+4. `POST /api/v1/friendship/request/block {"requestor": "andy@example.com", "block": "john@example.com"}` - Block a friend request
+5. `POST /api/v1/friendship/accept  {"requestor": "andy@example.com", "to": "john@example.com"} ` - Accept a friend request
+6. `POST /api/v1/friendship/reject {"requestor": "andy@example.com", "to": "john@example.com"}` - Reject a friend request
+7. `POST /api/v1/friendship/pending {"requestor": "andy@example.com", "to": "john@example.com"}` - Reset a friend request
 
 ### References
 - [Laravel: PHP Framework](https://laravel.com/)
