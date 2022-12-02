@@ -73,15 +73,5 @@ services:
         volumes:
             - ./:/var/www
 
-    # Node Server
-    node:
-        build:
-            context: .
-            target: node
-        volumes:
-            - .:/usr/src
-            - ./node_modules:/usr/src/node_modules
-        tty: true
-
 volumes:
     db-data: ~
